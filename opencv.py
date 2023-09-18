@@ -1,7 +1,7 @@
 import cv2
 
 
-image = cv2.imread('F:\Images\Ghossy.jpg')
+image = cv2.imread('Ghossy.jpg')
 
 while True:
     cv2.imshow("Ghossy", image)
