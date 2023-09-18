@@ -1,5 +1,5 @@
 import cv2
-GOAT = cv2.imread(r'C:\Users\Dell\Desktop\download.jpg')
+GOAT = cv2.imread('download.jpg')
 cv2.imshow('GOAT', GOAT)
 cv2.waitKey(0)
 
