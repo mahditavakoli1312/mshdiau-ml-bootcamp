@@ -1,8 +1,14 @@
-def print_hi(name):
-    print(f'Hi, {name}')
+def cal(value1,operand,value2):
+    if(operand == '+'):
+        return value1 + value2
+    elif(operand == '-'):
+        return value1 - value2
+    elif (operand == '*'):
+        return value1 * value2
+    elif (operand == '/'):
+        return value1 / value2
 
-
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-
+val1,op,val2 = input("Enter value1,operand and valu2:")
+val1 = int(val1)
+val2 = int(val2)
+print(cal(val1,op,val2))
