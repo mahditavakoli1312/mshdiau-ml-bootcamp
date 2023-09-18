@@ -10,7 +10,7 @@ blurred = cv2.GaussianBlur(img , (5,5),0)
 cv2.imshow('Blurred',blurred)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
-contrastform = cv2.multiply(img,5)
+contrastform = img * 1.1
 cv2.imshow('Contrast',contrastform)
 cv2.waitKey(0)
 
