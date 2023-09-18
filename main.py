@@ -1,9 +1,8 @@
 import cv2
-import cv2
 import numpy as np
 
 # خواندن تصویر
-image = cv2.imread('input_image.jpg')
+image = cv2.imread('sib.jpg')
 
 # اعمال فیلتر میانگین با اندازه مشخص
 kernel_size = 5  # اندازه فیلتر میانگین
