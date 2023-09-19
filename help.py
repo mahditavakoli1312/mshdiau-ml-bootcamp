@@ -1,20 +1,9 @@
-from matplotlib import pyplot as mt
 import cv2
-
-
-image = cv2.imread('black.jpg')
-image2 = cv2.imread('white.jpg')
-cv2.imshow('image', image )
-hist=cv2.calcHist([image],[0],None,[256],[0,256])
-# hist2=cv2.calcHist([image2],[0],None,[256],[0,255])
-# mt.plot(hist)
-# mt.title('histogram')
-# mt.xlabel('intensity')
-# mt.ylabel('num of pixels')
-# mt.show()
-mt.plot(hist)
-mt.title('histogram')
-mt.xlabel('intensity')
-mt.ylabel('num of pixels')
-mt.show()
+from cv2 import CascadeClassifier
+image = cv2.imread('E:\\u\\python\\hello\\1920_stock-photo-mosaic-of-satisfied-people-157248584.jpg')
+cascode = cv2.CascadeClassifier('E:\\u\\python\\hello\\haarcascade_frontalface_default.xml')
+happy_face =cascode.detectMultiScale(image , scaleFactor=1.1,minNeighbors=15,maxSize=(150,150))
+for (x,y,w,h) in happy_face:
+    cv2.rectangle(image,(x,y),(x+w , y+h),(0,0,255),3)
+cv2.imshow('happy face',image)
 cv2.waitKey(0)
