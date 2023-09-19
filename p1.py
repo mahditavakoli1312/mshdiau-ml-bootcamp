@@ -14,7 +14,6 @@ plt.title('histogram(white)')
 plt.xlabel("intensity")
 plt.ylabel('pixels')
 plt.show()
-
 plt.plot(hist2)
 plt.title('histogram(black)')
 plt.xlabel("intensity")
