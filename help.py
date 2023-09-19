@@ -1,6 +1,7 @@
 from matplotlib import pyplot as mt
 import cv2
 
+
 image = cv2.imread('E:\\u\\python\\hello\\black.jpg')
 image2 = cv2.imread('E:\\u\\python\\hello\\white.jpg')
 cv2.imshow('image', image )
